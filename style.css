@@ -95,6 +95,7 @@ main {
   font-weight: 500;
 }
 .about-us > p {
+  width: 560px;
   text-align: center;
   color: var(--primaryTextColor);
   font-size: 16px;
@@ -128,8 +129,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px; 
-   padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .promo-video > h4 {
   color: var(--secondaryTextColor);
@@ -142,7 +143,8 @@ main {
   color: var(--primaryTextColor);
   font-size: 16px;
   font-weight: 400;
-  margin-top: 50px; 
+  line-height: 160%;
+  margin-top: 50px;
   margin-bottom: 57px;
 }
 .video-block {
@@ -173,4 +175,405 @@ footer {
   color: var(--accentTextColor);
   font-size: 13px;
   font-weight: 400;
+}
+
+/* =============media============ */
+@media (max-width: 1440px) {
+  body {
+    max-width: 1440px;
+  }
+  /* -------------header------------- */
+  header {
+    padding: 60px 120px;
+  }
+  ul {
+    gap: 40px;
+  }
+  .header > h1 {
+    margin-top: 120px;
+    margin-bottom: 40px;
+  }
+  .header > p {
+    width: 70%;
+  }
+  .header > button {
+    padding: 15px 30px;
+    margin-top: 60px;
+  }
+  /* -------------main------------- */
+  .about-us {
+    gap: 30px;
+    padding: 100px 0px;
+  }
+  .about-us > h4 {
+    font-size: 30px;
+  }
+  .about-us > p {
+    width: 60%;
+  }
+  /* ------------promo-items------------- */
+  .promo-items {
+    justify-content: space-between;
+    gap: 40px;
+    padding: 100px 120px;
+  }
+  /* ------------promo-video------------- */
+  .promo-video {
+    padding: 100px 0px;
+  }
+  .promo-video > h4 {
+    font-size: 30px;
+  }
+  .promo-video > p {
+    width: 60%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .video-block {
+    width: 1200px;
+  }
+  /* -------------footer---------- */
+  footer {
+    padding: 60px 120px;
+  }
+  .footer > p {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  /* -------------header------------- */
+  body {
+    max-width: 1024px;
+  }
+  header {
+    padding: 60px;
+  }
+  .header > h1 {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+  .header > p {
+    width: 100%;
+  }
+  .header > button {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-top: 40px;
+  }
+  /* -------------main------------- */
+  .about-us {
+    padding: 60px;
+    align-items: center;
+  }
+  .about-us > h4 {
+    font-size: 28px;
+  }
+  .about-us > p {
+    width: 100%;
+    text-align: center;
+  }
+  /* ------------promo-items------------- */
+  .promo-items {
+    padding: 60px;
+    gap: 30px;
+  }
+  .promo-item {
+    gap: 10px;
+  }
+  .item-text > p {
+    font-size: 16px;
+  }
+  /* ------------promo-video------------- */
+  .promo-video {
+    align-items: center;
+    padding: 60px;
+  }
+  .promo-video > h4 {
+    font-size: 28px;
+  }
+  .promo-video > p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .video-block {
+    width: 100%;
+    height: 500px;
+  }
+  .video-block > img {
+    width: 50px;
+    cursor: pointer;
+  }
+  /* -------------footer---------- */
+  footer {
+    padding: 40px 60px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+  /* -------------header------------- */
+  header {
+    padding: 40px;
+  }
+  ul {
+    gap: 30px;
+  }
+  li {
+    font-size: 14px;
+  }
+  .header > h1 {
+    font-size: 30px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+  .header > p {
+    height: 100%;
+  }
+  .header > button {
+    font-size: 14px;
+    padding: 10px 15px;
+    margin-top: 30px;
+  }
+  /* -------------main------------- */
+  .about-us {
+    padding: 40px;
+    gap: 20px;
+    align-items: start;
+  }
+  .about-us > h4 {
+    font-size: 26px;
+  }
+  .about-us > p {
+    text-align: start;
+  }
+  /* ------------promo-items------------- */
+  .promo-items {
+    padding: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .promo-item {
+    display: flex;
+    gap: 15px;
+  }
+  .promo-item > img {
+    width: 40px;
+  }
+  /* ------------promo-video------------- */
+  .promo-video {
+    padding: 40px;
+    align-items: start;
+    gap: 20px;
+  }
+  .promo-video > h4 {
+    font-size: 26px;
+  }
+  .promo-video > p {
+    text-align: start;
+    margin: 0;
+  }
+  .video-block {
+    width: 100%;
+    height: 400px;
+  }
+  .video-block > img {
+    width: 40px;
+  }
+  /* -------------footer---------- */
+  footer {
+    padding: 20px 40px;
+  }
+  .footer > p {
+    font-size: 14px;
+  }
+  .footer > span {
+    font-size: 13px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    max-width: 480px;
+  }
+  ul {
+    gap: 14px;
+  }
+  li {
+    font-size: 10px;
+  }
+  .header > h1 {
+    font-size: 24px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+  }
+  .header > p {
+    font-size: 14px;
+  }
+  .header > button {
+    font-size: 12px;
+    padding: 8px 12px;
+    margin-top: 20px;
+  }
+  /* -------------main------------- */
+  .about-us {
+    align-items: start;
+    gap: 10px;
+  }
+  .about-us > h4 {
+    font-size: 20px;
+  }
+  .about-us > p {
+    font-size: 14px;
+  }
+  /* ------------promo-items------------- */
+  .promo-item {
+    display: flex;
+    gap: 10px;
+  }
+  .promo-item > img {
+    width: 40px;
+  }
+  .item-text > p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .item-text > span {
+    font-size: 14px;
+  }
+  /* ------------promo-video------------- */
+  .promo-video {
+    gap: 10px;
+  }
+  .promo-video > h4 {
+    font-size: 20px;
+  }
+  .promo-video > p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .video-block {
+    width: 100%;
+    height: 250px;
+  }
+  .video-block > img {
+    width: 40px;
+  }
+  /* -------------footer---------- */
+  .footer > p {
+    font-size: 8px;
+    padding: 0;
+  }
+  .footer > span {
+    font-size: 8px;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    max-width: 480px;
+  }
+  /* -------------header------------- */
+  header {
+    padding: 30px 20px;
+  }
+  ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  li {
+    font-size: 12px;
+    line-height: 110%;
+    letter-spacing: 1.2px;
+  }
+  li:hover {
+    font-weight: 400;
+  }
+  .header > h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .header > p {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+  .header > button {
+    display: block;
+    font-size: 10px;
+    padding: 10px 15px;
+    margin: 25px auto;
+  }
+  /* -------------main------------- */
+  .about-us {
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+  }
+  .about-us > h4 {
+    font-size: 24px;
+  }
+  .about-us > p {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+  /* ------------promo-items------------- */
+  .promo-items {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .promo-item {
+    display: flex;
+    gap: 10px;
+  }
+  .promo-item > img {
+    width: 30px;
+  }
+  .item-text > p {
+    font-size: 12px;
+  }
+  .item-text > span {
+    font-size: 12px;
+  }
+  /* ------------promo-video------------- */
+  .promo-video {
+    padding: 20px;
+    align-items: center;
+    gap: 15px;
+  }
+  .promo-video > h4 {
+    font-size: 24px;
+  }
+  .promo-video > p {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+  .video-block {
+    height: 180px;
+  }
+  .video-block > img {
+    width: 25px;
+  }
+  /* -------------footer---------- */
+  footer {
+    padding: 10px 20px;
+  }
+  .footer > p {
+    font-size: 6px;
+    font-weight: 200;
+    line-height: 0%;
+    padding-bottom: 0px;
+  }
+  .footer > span {
+    font-size: 6px;
+    font-weight: 200;
+  }
 }
